@@ -1,0 +1,67 @@
+[
+    {
+        "id" : 1,
+        "imagen": "images/tienda/piano-yamaha-p45.jpg",
+        "nombre": "Yamaha P45",
+        "marca": "YAMAHA",
+        "precio": 100000,
+        "categoria": "Digital"
+    },
+    {
+        "id" : 2,
+        "imagen": "images/tienda/piano-yamaha-ju109.jpg",
+        "nombre": "Yamaha Ju109",
+        "marca": "YAMAHA",
+        "precio": 1000000,
+        "categoria": "Acustico"
+    },
+    {
+        "id" : 3,
+        "imagen": "images/tienda/piano-yamaha-gb1k.jpg",
+        "nombre": "Yamaha Gb1k",
+        "marca": "YAMAHA",
+        "precio": 10000000,
+        "categoria": "Acustico"
+    },
+    {
+        "id" : 4,
+        "imagen": "images/tienda/piano-nord-piano-4.jpg",
+        "nombre": "Nord Piano 4",
+        "marca": "NORD",
+        "precio": 500000,
+        "categoria": "Digital"
+    },
+    {
+        "id" : 5,
+        "imagen": "images/tienda/piano-nord-grand-stage-piano.jpg",
+        "nombre": "Nord Grand Stage",
+        "marca": "NORD",
+        "precio": 850000,
+        "categoria": "Digital"
+    },
+    {
+        "id" : 6,
+        "imagen": "images/tienda/piano-kawai-k15.jpg",
+        "nombre": "Kawai K15",
+        "marca": "KAWAI",
+        "precio": 1250000,
+        "categoria": "Acustico"
+    },
+    {
+        "id" : 7,
+        "imagen": "images/tienda/piano-kawai-gl10.jpg",
+        "nombre": "Kawai GL10",
+        "marca": "KAWAI",
+        "precio": 2500000,
+        "categoria": "Acustico"
+    },
+    {
+        "id" : 8,
+        "imagen": "images/tienda/piano-roland-lx708.jpg",
+        "nombre": "Roland Lx708",
+        "marca": "ROLAND",
+        "precio": 1500000,
+        "categoria": "Hibrido"
+    }
+
+]

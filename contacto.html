@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Css-->
+    <link rel="stylesheet" href="index.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="PageOverlay"></div>
+    <header id="header" class="header row g-0">
+        <div class="hamburger-container col-1 col-lg-8">
+            <button id="hamburgerMenu">
+                <img src="images/icons/hamburger.svg" class="icons" alt="menu hamburguesa">
+            </button>
+            <nav id="nav" class="nav">
+                <button id="cross" class="cross"><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path fill="#fff" d="M23.707.293h0a1,1,0,0,0-1.414,0L12,10.586,1.707.293a1,1,0,0,0-1.414,0h0a1,1,0,0,0,0,1.414L10.586,12,.293,22.293a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0L12,13.414,22.293,23.707a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L13.414,12,23.707,1.707A1,1,0,0,0,23.707.293Z"/></svg></button>
+                <ul class="">
+                    <li class=""><a href="index.html">INICIO</a></li>
+                    <li class=""><a href="tienda.html">TIENDA</a></li>
+                    <li class=""><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title-container col-8 col-lg-2 order-lg-first">
+            <a href="index.html"><img src="images/icons/logo.svg" class="logo" alt="PIANO STORE"></a>
+            <h1><a href="index.html">PIANO STORE</a></h1>
+        </div>
+        <div id="btn-open-search" class="search-btn-container col-1"><img src="images/icons/search.svg" class="icons"></div>
+        <div class="cart-container col-1">
+            <div id="btn-cart" class="btn-cart"><img src="images/icons/icon-cart.svg" class="icons" alt="carticon"></div>
+            <div id="cart-count" class="cart-count"></div>
+            <div id="cart" class="cart">
+                <div class="d-flex flex-column h-100">
+                    <div class="cart-header">
+                        <p>CARRITO</p>
+                        <img src="images/icons/x.svg" class="icons" id="close-cart">
+                    </div>
+                    <div class="cart-main flex-grow-1">
+                        <div id="products-in-cart" class="products-in-cart"></div>
+                        <div id="msg-empty" class="msg-empty">Tu carrito está vacío</div>
+                    </div>
+                    <div id="checkout" class="checkout"></div>
+                </div>
+            </div>  
+        </div>
+        <div id="search-container" class="search-container">
+            <div name="search-div" id="search-div" class="search-div">
+                <img src="images/icons/search.svg" class="search-icon">
+                <input type="search" id="search" placeholder="Buscar">
+                <img id="btn-close-search" src="images/icons/x.svg" class="search-icon btn-close-search">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container my-5">
+            <form action="https://formspree.io/f/xqknbqbd" method="POST" class="form" id="form">
+                <div class="formdivs">
+                    <label class="label" for="name">Nombre</label>
+                    <input class="input" name="name" type="text" id="name" required placeholder="Introduce tu nombre">
+                </div>
+                <div class="formdivs">
+                    <label class="label" for="email">Email</label>
+                    <input class="input" name="email" type="email" id="email" required placeholder="Introduce tu email">
+                </div>
+                <div class="formdivs">
+                    <label class="label" for="number">Numero de Contacto</label>
+                    <input class="input" name="number" type="number" id="number" required placeholder="Introduce tu numero">
+                </div>
+                <div class="formdivs">   
+                    <label class="label" for="consulta">Consulta</label>
+                    <textarea class="input" name="consulta" id="consulta" placeholder="Escribe tu consulta"></textarea>
+                </div>
+                <div class="formdivs">
+                    <label class="checkbox-label" for="checkbox">Deseo recibir noticias acerca de piano store</label>
+                    <input class="checkbox" name="checkbox" type="checkbox">
+                </div>
+                <div>
+                    <button class="btn-form" id="btn-form" type="submit">ENVIAR</button>
+                    <p id="form-status" class="form-status"></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 footer-about wow fadeInUp">
+                        <h3>Acerca de Nosotros</h3>
+                        <p>
+                            Somos la empresa lider en venta de pianos desde hace 50 años en Argentina.
+                        </p>
+                        <p>&copy; Piano Store Company Inc.</p>
+                    </div>
+                    <div class="col-md-4 offset-md-1 footer-contact wow fadeInDown">
+                        <h3>Contacto</h3>
+                        <p>Av Libertador, 1042 Buenos Aires Argentina</p>
+                        <p>Telefono: (11) 1234-5678 </p>
+                        <p>Email: contacto@pianostore.com</p>
+                    </div>
+                    <div class="col-md-4 footer-links wow fadeInUp">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Links</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><a class="scroll-link" href="index.html">Inicio</a></p>
+                                <p><a href="tienda.html">Tienda</a></p>
+                                <p><a href="contacto.html">Contacto</a></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><a href="#">Afiliados</a></p>
+                                <p><a href="#">Terminos y Condiciones</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="#"><i class="fab fa-twitter"></i></a> 
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a> 
+                        <a href="#"><i class="fab fa-instagram"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/form.js"></script>
+<script src="js/tienda.js"></script>
+<script src="js/app.js"></script>
+<script src="js/menuhamburguesa.js"></script>
+<script src="js/searchbar.js"></script>
+</html>
